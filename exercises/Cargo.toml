@@ -1,0 +1,25 @@
+[workspace]
+resolver = "2"
+members = [
+    "day1_fibonacci",
+    "day1_collatz",
+    "day1_nested_arrays",
+    "day1_geometry",
+    "day1_elevator",
+    "day2_expression_eval",
+    "day2_logger_trait",
+    "day2_generic_min",
+    "day2_log_filter",
+    "day2_counter",
+    "day2_rot13",
+    "day3_builder_type",
+    "day3_binary_tree",
+    "day3_protobuf_parsing",
+    "day4_gui_modules",
+    "day4_luhn_algorithm",
+    "day4_result_error_handling",
+    "concurrency_dining_philosophers",
+    "concurrency_link_checker",
+    "concurrency_async_chat",
+    "unsafe_ffi_wrapper",
+]

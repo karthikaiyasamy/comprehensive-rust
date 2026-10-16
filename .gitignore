@@ -1,0 +1,19 @@
+# PDF files
+*.pdf
+comprehensive-rust.pdf
+
+# Cargo build artifacts
+target/
+**/target/
+Cargo.lock.bk
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# IDE and Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

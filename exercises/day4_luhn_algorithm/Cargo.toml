@@ -1,0 +1,4 @@
+[package]
+name = "day4_luhn_algorithm"
+version = "0.1.0"
+edition = "2021"
