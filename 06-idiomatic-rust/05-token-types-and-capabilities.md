@@ -70,4 +70,4 @@ fn init_uart(_proof: &ClockConfigured) {
 
 ## Summary & Next Step
 
-You have learned capability-based security using zero-sized token types. Next, we explore modern design patterns in **Polymorphism and Composition over Inheritance** in [06-polymorphism-composition.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/06-polymorphism-composition.md).
+You have learned capability-based security using zero-sized token types. Next, we explore modern design patterns in **Polymorphism and Composition over Inheritance** in [06-polymorphism-composition.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/06-idiomatic-rust/06-polymorphism-composition.md).

@@ -102,4 +102,4 @@ fn main() {
 You have completed **Core Rust (Days 1 to 4)**! You have mastered the foundational language: syntax, types, pattern matching, traits, generics, memory management, lifetimes, modules, testing, errors, and unsafe basics.
 
 Now we enter the **Advanced Systems Engineering Tracks**:
-Proceed to **Module 5: Concurrency in Depth** starting with [05-concurrency/01-threads-and-scoped-threads.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/01-threads-and-scoped-threads.md).
+Proceed to **Module 5: Concurrency in Depth** starting with [05-concurrency/01-threads-and-scoped-threads.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/05-concurrency/01-threads-and-scoped-threads.md).

@@ -8,15 +8,15 @@ If you're coming from Java, Rust's syntax may look familiar, but its mental mode
 
 ### Java
 ```java
-// Immutable by default (final)
-final int x = 10;
-int y = 20;  // Mutable
-y = 30;      // OK
+// Mutable by default; immutability requires explicit 'final'
+final int x = 10; // Immutable
+int y = 20;       // Mutable
+y = 30;           // OK
 ```
 
 ### Rust
 ```rust
-// MUTABLE by default (no keyword needed)
+// IMMUTABLE by default; mutability requires explicit 'mut'
 let x = 10;      // Immutable (cannot reassign)
 let mut y = 20;  // Mutable (can reassign)
 y = 30;          // OK
@@ -411,7 +411,7 @@ handle.join().unwrap();
 ├─────────────────────────────────────────┤
 │ - Runtime synchronization (synchronized │
 │   blocks, Lock interfaces)              │
-│ -容易发生 data races (忘记同步)            │
+│ - Prone to data races (forgotten locks) │
 │ - Deadlocks possible (circular wait)     │
 │ - Memory model complex (JMM)            │
 └─────────────────────────────────────────┘

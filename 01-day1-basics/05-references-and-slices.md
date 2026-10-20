@@ -245,4 +245,4 @@ fn main() {
 
 ## Summary & Next Step
 
-You have learned shared references (`&T`), exclusive references (`&mut T`), slice fat pointers, string semantics, and in-place vector mutation. Next, we build custom data abstractions in **User-Defined Types: Structs, Enums, Const, and Static** in [06-user-defined-types.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/01-day1-basics/06-user-defined-types.md).
+You have learned shared references (`&T`), exclusive references (`&mut T`), slice fat pointers, string semantics, and in-place vector mutation. Next, we build custom data abstractions in **User-Defined Types: Structs, Enums, Const, and Static** in [06-user-defined-types.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/01-day1-basics/06-user-defined-types.md).

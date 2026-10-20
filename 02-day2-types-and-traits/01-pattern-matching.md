@@ -278,4 +278,4 @@ fn main() {
 
 ## Summary & Next Step
 
-You have mastered refutable and irrefutable pattern matching, match guards, `let else`, and recursive expression trees. Next, we explore object-oriented abstractions in Rust: **Methods, Traits, and Derives** in [02-methods-and-traits.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/02-methods-and-traits.md).
+You have mastered refutable and irrefutable pattern matching, match guards, `let else`, and recursive expression trees. Next, we explore object-oriented abstractions in Rust: **Methods, Traits, and Derives** in [02-methods-and-traits.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/02-day2-types-and-traits/02-methods-and-traits.md).

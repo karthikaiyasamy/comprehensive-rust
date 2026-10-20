@@ -185,4 +185,4 @@ fn main() {
 
 ## Summary & Next Step
 
-You have mastered the borrow checker's aliasing rules, non-lexical lifetimes (NLL), and reborrowing. Next, we explore named lifetimes in **Lifetimes: Annotations, Structs, and Elision Rules** in [05-lifetimes.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/05-lifetimes.md).
+You have mastered the borrow checker's aliasing rules, non-lexical lifetimes (NLL), and reborrowing. Next, we explore named lifetimes in **Lifetimes: Annotations, Structs, and Elision Rules** in [05-lifetimes.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/03-day3-memory-and-lifetimes/05-lifetimes.md).

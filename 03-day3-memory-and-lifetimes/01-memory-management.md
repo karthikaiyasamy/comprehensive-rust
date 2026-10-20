@@ -95,4 +95,4 @@ Rust's memory management rests entirely upon three invariants enforced by the co
 
 ## Summary & Next Step
 
-You now understand program memory layout and how Rust eliminates both manual frees and garbage collection pauses. Next, we explore **Ownership Rules, Move Semantics, and the Drop Trait** in [02-ownership-and-moves.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/02-ownership-and-moves.md).
+You now understand program memory layout and how Rust eliminates both manual frees and garbage collection pauses. Next, we explore **Ownership Rules, Move Semantics, and the Drop Trait** in [02-ownership-and-moves.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/03-day3-memory-and-lifetimes/02-ownership-and-moves.md).

@@ -287,4 +287,4 @@ In Release mode (`cargo run --release`), it wraps around to $512,559,680$ produc
 
 ## Summary & Next Step
 
-You have mastered Rust's primitive types, immutability, integer overflow semantics, and type inference. Next, we explore **Blocks, Expressions, and Control Flow** in [03-control-flow-basics.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/01-day1-basics/03-control-flow-basics.md).
+You have mastered Rust's primitive types, immutability, integer overflow semantics, and type inference. Next, we explore **Blocks, Expressions, and Control Flow** in [03-control-flow-basics.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/01-day1-basics/03-control-flow-basics.md).

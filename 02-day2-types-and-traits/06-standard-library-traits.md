@@ -234,4 +234,4 @@ fn main() -> io::Result<()> {
 
 You have completed **Day 2: Advanced Types, Traits, and the Standard Library**! 
 
-Proceed to **Day 3: Memory Management, Ownership, and Lifetimes** starting with [03-day3-memory-and-lifetimes/01-memory-management.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/01-memory-management.md).
+Proceed to **Day 3: Memory Management, Ownership, and Lifetimes** starting with [03-day3-memory-and-lifetimes/01-memory-management.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/03-day3-memory-and-lifetimes/01-memory-management.md).

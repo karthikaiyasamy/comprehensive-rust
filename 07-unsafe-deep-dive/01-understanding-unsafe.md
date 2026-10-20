@@ -71,4 +71,4 @@ To avoid undefined behavior, systems engineers must understand the distinction b
 
 ## Summary & Next Step
 
-You have learned the philosophy of Unsafe Rust, its dual syntactic roles, and the distinction between safety and validity invariants. Next, we formalize safety proofs in **Safety Preconditions, Undefined Behavior, and Soundness** in [02-safety-preconditions.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/07-unsafe-deep-dive/02-safety-preconditions.md).
+You have learned the philosophy of Unsafe Rust, its dual syntactic roles, and the distinction between safety and validity invariants. Next, we formalize safety proofs in **Safety Preconditions, Undefined Behavior, and Soundness** in [02-safety-preconditions.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/07-unsafe-deep-dive/02-safety-preconditions.md).

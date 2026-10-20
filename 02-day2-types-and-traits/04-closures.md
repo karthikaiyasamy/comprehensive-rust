@@ -196,4 +196,4 @@ fn main() {
 
 ## Summary & Next Step
 
-You have learned closures, type inference, environment capturing, `Fn` / `FnMut` / `FnOnce`, and the `move` keyword. Next, we master core data structures in **Standard Library Types: Option, Result, Vec, String, and HashMap** in [05-standard-library-types.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/05-standard-library-types.md).
+You have learned closures, type inference, environment capturing, `Fn` / `FnMut` / `FnOnce`, and the `move` keyword. Next, we master core data structures in **Standard Library Types: Option, Result, Vec, String, and HashMap** in [05-standard-library-types.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/02-day2-types-and-traits/05-standard-library-types.md).

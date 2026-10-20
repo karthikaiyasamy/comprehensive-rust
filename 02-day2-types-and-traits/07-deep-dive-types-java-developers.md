@@ -57,7 +57,7 @@ public void sendEmail(Email email) {
 
 #### Rust Approach (Compile-time)
 ```rust
-// Type-level validation:编译时 enforced
+// Type-level validation: compile-time enforced
 struct Email(String);
 
 impl Email {
@@ -328,55 +328,66 @@ let shipped = paid.ship();
 
 ### More Real-World Examples
 
-#### 4.1 Type-Safe Builder Pattern
+#### 4.1 Type-Safe Builder Pattern (Compile-Time Mandatory Fields)
 ```rust
-struct UserBuilder<Name, Email> {
-    name: Option<String>,
-    email: Option<String>,
-    _name_phantom: std::marker::PhantomData<Name>,
-    _email_phantom: std::marker::PhantomData<Email>,
+pub struct User {
+    pub name: String,
+    pub email: String,
 }
 
-// Types to track completion
-struct NameRequired;
-struct EmailRequired;
-struct Complete;
+// Marker types representing state of required fields
+pub struct NoName;
+pub struct HasName(String);
 
-impl UserBuilder<NameRequired> {
-    fn new() -> Self {
+pub struct NoEmail;
+pub struct HasEmail(String);
+
+pub struct UserBuilder<N, E> {
+    name: N,
+    email: E,
+}
+
+impl UserBuilder<NoName, NoEmail> {
+    pub fn new() -> Self {
         UserBuilder {
-            name: None,
-            email: None,
-            _name_phantom: std::marker::PhantomData,
-            _email_phantom: std::marker::PhantomData,
-        }
-    }
-    
-    fn name(self, name: String) -> UserBuilder<EmailRequired> {
-        UserBuilder {
-            name: Some(name),
-            email: None,
-            _name_phantom: std::marker::PhantomData,
-            _email_phantom: std::marker::PhantomData,
+            name: NoName,
+            email: NoEmail,
         }
     }
 }
 
-impl UserBuilder<EmailRequired> {
-    fn email(self, email: String) -> UserBuilder<Complete> {
+impl<E> UserBuilder<NoName, E> {
+    pub fn name(self, name: impl Into<String>) -> UserBuilder<HasName, E> {
+        UserBuilder {
+            name: HasName(name.into()),
+            email: self.email,
+        }
+    }
+}
+
+impl<N> UserBuilder<N, NoEmail> {
+    pub fn email(self, email: impl Into<String>) -> UserBuilder<N, HasEmail> {
         UserBuilder {
             name: self.name,
-            email: Some(email),
-            _name_phantom: std::marker::PhantomData,
-            _email_phantom: std::marker::PhantomData,
+            email: HasEmail(email.into()),
         }
     }
-    
-    fn build(self) -> Result<(), String> {
-        Err("Name required".to_string())
-        // Actually would need more complex setup
+}
+
+// .build() is ONLY available when BOTH name and email have been provided!
+impl UserBuilder<HasName, HasEmail> {
+    pub fn build(self) -> User {
+        User {
+            name: self.name.0,
+            email: self.email.0,
+        }
     }
 }
+
+// Usage:
+// UserBuilder::new().build(); // COMPILE ERROR: no method `build` on UserBuilder<NoName, NoEmail>
+// UserBuilder::new().name("Alice").build(); // COMPILE ERROR: no method `build` on UserBuilder<HasName, NoEmail>
+// let user = UserBuilder::new().name("Alice").email("alice@work.com").build(); // Compiles!
 ```
 
 #### 4.2 Zero-Copy Parsing with Lifetimes
@@ -433,9 +444,7 @@ impl Connection<Disconnected> {
             _state: std::marker::PhantomData,
         }
     }
-}
 
-impl Connection<Disconnected> {
     pub fn connect(self) -> Connection<Connecting> {
         println!("Connecting to {}:{}...", self.host, self.port);
         Connection {
@@ -654,6 +663,118 @@ impl<M> Logger<M> {
     }
 }
 ```
+
+---
+
+### 7.5 Substructural & Affine Types: The Foundation of Rust's Move Semantics
+
+In computer science type theory, type systems are classified by their **structural rules** (exchange, weakening, contraction):
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                        Type System Taxonomy                            │
+├────────────────────────────────────────────────────────────────────────┤
+│ 1. Cartesian / Unrestricted (Java, Python, C++):                       │
+│    - Weakening: You can ignore/discard any value.                      │
+│    - Contraction: You can duplicate (alias) any value indefinitely.    │
+│    - Risk: Aliasing + Mutation = Data races & stale state.            │
+├────────────────────────────────────────────────────────────────────────┤
+│ 2. Linear Type Systems:                                                │
+│    - Values MUST be consumed EXACTLY ONCE.                             │
+│    - Neither discarded nor duplicated.                                 │
+├────────────────────────────────────────────────────────────────────────┤
+│ 3. Affine Type Systems (Rust):                                         │
+│    - Values can be used AT MOST ONCE (unless implementing `Copy`).     │
+│    - Moving a value invalidates the source binding.                    │
+│    - Destructor (`Drop`) automatically cleans up if not moved.         │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+#### Why Affine Types Transform Software Engineering:
+In Java, when you pass an object reference to a method, both the caller and callee hold live references to the same mutable heap object:
+```java
+// Java: Unrestricted aliasing
+Socket socket = server.accept();
+pool.submit(() -> handle(socket));
+socket.close(); // BUG: Races with handle() or closes under its feet!
+```
+In Rust, affine types turn resource tracking into a **compile-time proof**:
+```rust
+let socket = listener.accept()?;
+// Moves ownership into worker thread:
+thread::spawn(move || handle(socket));
+// socket.close(); // COMPILE ERROR: value used here after move!
+```
+
+---
+
+### 7.6 Subtyping & Variance: Java PECS vs. Rust Lifetimes
+
+Java developers are intimately familiar with **PECS** (*Producer Extends, Consumer Super*) for call-site generic variance:
+```java
+// Java:
+List<? extends Animal> producer = dogs; // Covariant: can read Animal, cannot write
+List<? super Dog> consumer = animals;   // Contravariant: can write Dog, reads Object
+```
+
+In Rust:
+1. **There is NO class or struct subtyping.** `struct Dog` never subtypes `struct Animal`.
+2. **The ONLY subtyping in Rust is Lifetime Subtyping:** `'a: 'b` ("lifetime `'a` outlives `'b`", meaning a longer-lived reference can be used where a shorter-lived reference is requested).
+
+#### The Rust Variance Matrix:
+
+| Type Constructor | Variance over `'a` | Variance over `T` | Why? |
+| :--- | :--- | :--- | :--- |
+| `&'a T` | **Covariant** | **Covariant** | Read-only. Safe to shorten lifetime or substitute a longer-lived `T`. |
+| `&'a mut T` | **Covariant** | **INVARIANT** | Read/Write. **Must be invariant** over `T` to prevent memory unsafety! |
+| `fn(T) -> U` | — | `T` is **Contravariant**, `U` is **Covariant** | Functions accept more general arguments and return more specific types. |
+| `*const T` | — | **Covariant** | Raw read pointer. |
+| `*mut T` | — | **INVARIANT** | Raw read/write pointer. |
+
+#### Soundness Proof: Why Must `&mut T` Be Invariant Over `T`?
+Consider what would happen if `&mut T` were covariant over `T`:
+```rust
+// Hypothetical (rejected by compiler):
+fn evil_overwrite<'a>(slot: &mut &'a str, short_lived: &'a str) {
+    *slot = short_lived; // If slot were covariant, we could pass &mut &'static str!
+}
+
+// Result if allowed:
+// A &'static str reference would now point to stack memory that is already freed!
+// To prevent this catastrophe, rustc enforces that &mut T is strictly INVARIANT over T.
+```
+
+#### Controlling Variance with `PhantomData`:
+When authoring custom containers or low-level primitives:
+- `PhantomData<fn() -> T>`: Covariant over `T`
+- `PhantomData<fn(T)>`: Contravariant over `T`
+- `PhantomData<fn(T) -> T>`: **Invariant** over `T`
+
+---
+
+### 7.7 Niche Filling Optimization: Zero-Cost Algebraic Types
+
+In Java, representing an optional primitive or pointer incurs severe penalties:
+```java
+// Java:
+Optional<Long> opt = Optional.of(42L);
+// Memory: 16-24 byte Optional instance + 24 byte Long object + 8 byte reference = 48-56 bytes!
+```
+
+In Rust, the compiler exploits **bit-pattern niches** (invalid byte values) to encode enum discriminants:
+
+```
+Rust Option<&T> (Pointer Niche):
+Valid reference: [ 64-bit Non-Zero Memory Address ] = Some(&T)
+Null address:    [ 0x0000000000000000             ] = None
+Size in memory:  EXACTLY 8 bytes (0 bytes overhead!)
+```
+
+This applies to:
+- `Option<&T>`: 8 bytes (null pointer optimization)
+- `Option<NonNull<T>>`: 8 bytes
+- `Option<std::num::NonZeroU64>`: 8 bytes
+- `Result<NonNull<T>, ()>`: 8 bytes
 
 ---
 

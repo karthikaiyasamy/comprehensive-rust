@@ -103,4 +103,4 @@ unsafe impl Sync for MyRawBuffer {}
 
 ## Summary & Next Step
 
-You have learned the formal definitions of `Send` and `Sync`, why `Rc` and `RefCell` are forbidden across threads, and how the compiler prevents data races at compile time. Next, we explore shared state concurrency: **Arc, Mutex, RwLock, and Deadlock Prevention** in [04-shared-state-concurrency.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/04-shared-state-concurrency.md).
+You have learned the formal definitions of `Send` and `Sync`, why `Rc` and `RefCell` are forbidden across threads, and how the compiler prevents data races at compile time. Next, we explore shared state concurrency: **Arc, Mutex, RwLock, and Deadlock Prevention** in [04-shared-state-concurrency.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/05-concurrency/04-shared-state-concurrency.md).

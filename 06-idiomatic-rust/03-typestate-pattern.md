@@ -104,4 +104,4 @@ Because state transition methods consume `self` by value, the previous state var
 
 ## Summary & Next Step
 
-You have learned how to eliminate runtime state checks and build compile-time verified workflows using the Typestate pattern. Next, we explore advanced reference mechanics in **Borrow Checker Invariants, Split Borrows, and PhantomData** in [04-borrow-checker-invariants.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/04-borrow-checker-invariants.md).
+You have learned how to eliminate runtime state checks and build compile-time verified workflows using the Typestate pattern. Next, we explore advanced reference mechanics in **Borrow Checker Invariants, Split Borrows, and PhantomData** in [04-borrow-checker-invariants.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/06-idiomatic-rust/04-borrow-checker-invariants.md).

@@ -177,4 +177,4 @@ fn main() {
 
 ## Summary & Next Step
 
-You have mastered unit tests, integration tests, doctests, and static analysis with Clippy. Next, we build resilient production software in **Error Handling: Panics, Result, thiserror, and anyhow** in [03-error-handling.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/04-day4-error-testing-modules/03-error-handling.md).
+You have mastered unit tests, integration tests, doctests, and static analysis with Clippy. Next, we build resilient production software in **Error Handling: Panics, Result, thiserror, and anyhow** in [03-error-handling.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/04-day4-error-testing-modules/03-error-handling.md).

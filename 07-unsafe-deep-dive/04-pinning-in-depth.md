@@ -114,4 +114,4 @@ fn main() {
 
 ## Summary & Next Step
 
-You have learned why moves break self-referential pointers, how `Pin` guarantees immovable memory, and how `PhantomPinned` enforces this at compile time. Next, we master native systems interoperability in **FFI and C Language Interoperability** in [05-ffi-and-language-interop.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/07-unsafe-deep-dive/05-ffi-and-language-interop.md).
+You have learned why moves break self-referential pointers, how `Pin` guarantees immovable memory, and how `PhantomPinned` enforces this at compile time. Next, we master native systems interoperability in **FFI and C Language Interoperability** in [05-ffi-and-language-interop.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/07-unsafe-deep-dive/05-ffi-and-language-interop.md).

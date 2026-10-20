@@ -153,4 +153,4 @@ fn main() {
 
 ## Summary & Next Step
 
-You have mastered Rust's error handling model: panics, `Result`, the `?` operator, `thiserror`, and `anyhow`. Next, we explore the boundary between safe and low-level code in **Unsafe Rust Basics and Safe FFI Wrappers** in [04-unsafe-rust-basics.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/04-day4-error-testing-modules/04-unsafe-rust-basics.md).
+You have mastered Rust's error handling model: panics, `Result`, the `?` operator, `thiserror`, and `anyhow`. Next, we explore the boundary between safe and low-level code in **Unsafe Rust Basics and Safe FFI Wrappers** in [04-unsafe-rust-basics.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/04-day4-error-testing-modules/04-unsafe-rust-basics.md).

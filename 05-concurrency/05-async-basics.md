@@ -108,4 +108,4 @@ async fn main() {
 
 ## Summary & Next Step
 
-You have learned how Rust compiles `async fn` into lazy state machines, the `Future` polling model, and the role of the Tokio executor. Next, we master asynchronous control flow in **Async Channels, Join, and Select** in [06-async-channels-and-control-flow.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/06-async-channels-and-control-flow.md).
+You have learned how Rust compiles `async fn` into lazy state machines, the `Future` polling model, and the role of the Tokio executor. Next, we master asynchronous control flow in **Async Channels, Join, and Select** in [06-async-channels-and-control-flow.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/05-concurrency/06-async-channels-and-control-flow.md).

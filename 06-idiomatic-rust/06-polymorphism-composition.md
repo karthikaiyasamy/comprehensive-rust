@@ -118,4 +118,4 @@ impl<S: CompressionStrategy> Archive<S> {
 
 You have completed **Module 6: Idiomatic Rust and Modern Systems Architecture**! 
 
-Now we enter the deepest, most rigorous realm of systems engineering: **Module 7: The Unsafe Rust Deep Dive** starting with [07-unsafe-deep-dive/01-understanding-unsafe.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/07-unsafe-deep-dive/01-understanding-unsafe.md).
+Now we enter the deepest, most rigorous realm of systems engineering: **Module 7: The Unsafe Rust Deep Dive** starting with [07-unsafe-deep-dive/01-understanding-unsafe.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/07-unsafe-deep-dive/01-understanding-unsafe.md).

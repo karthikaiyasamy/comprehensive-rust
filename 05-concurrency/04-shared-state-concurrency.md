@@ -167,4 +167,4 @@ By forcing Kant (who sits between fork 4 and fork 0) to pick up fork 0 before fo
 
 ## Summary & Next Step
 
-You have mastered `Arc`, `Mutex`, `RwLock`, lock poisoning, and deadlock prevention. Next, we transition from OS threads to asynchronous programming: **Async Basics, Futures, and Runtimes** in [05-async-basics.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/05-async-basics.md).
+You have mastered `Arc`, `Mutex`, `RwLock`, lock poisoning, and deadlock prevention. Next, we transition from OS threads to asynchronous programming: **Async Basics, Futures, and Runtimes** in [05-async-basics.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/05-concurrency/05-async-basics.md).

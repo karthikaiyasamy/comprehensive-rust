@@ -100,4 +100,4 @@ Callers simply import the trait (`use crate::StringUtilsExt;`) to activate the h
 
 ## Summary & Next Step
 
-You have learned newtypes, RAII transaction guards, and extension traits. Next, we master one of Rust's most powerful architectural patterns in **The Typestate Pattern: Enforcing Invariants at Compile Time** in [03-typestate-pattern.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/03-typestate-pattern.md).
+You have learned newtypes, RAII transaction guards, and extension traits. Next, we master one of Rust's most powerful architectural patterns in **The Typestate Pattern: Enforcing Invariants at Compile Time** in [03-typestate-pattern.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/06-idiomatic-rust/03-typestate-pattern.md).

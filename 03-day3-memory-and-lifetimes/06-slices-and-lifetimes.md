@@ -78,4 +78,4 @@ fn main() {
 
 You have completed **Day 3: Memory Management, Ownership, and Lifetimes**! You now possess an intimate understanding of Rust's stack/heap architecture, move semantics, smart pointers (`Box`, `Rc`, `RefCell`), the borrow checker, and lifetime subtyping.
 
-Proceed to **Day 4: Errors, Testing, Modules, and Workspaces** starting with [04-day4-error-testing-modules/01-modules-and-packages.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/04-day4-error-testing-modules/01-modules-and-packages.md).
+Proceed to **Day 4: Errors, Testing, Modules, and Workspaces** starting with [04-day4-error-testing-modules/01-modules-and-packages.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/04-day4-error-testing-modules/01-modules-and-packages.md).

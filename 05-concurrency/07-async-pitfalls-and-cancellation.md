@@ -139,4 +139,4 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 You have completed **Module 5: Concurrency in Depth**! You understand OS threads, scoped threads, message passing, `Send`/`Sync`, `Arc`/`Mutex`, async runtimes, `join!`/`select!`, pinning, and cancellation safety.
 
-Proceed to **Module 6: Idiomatic Rust & Advanced API Design** starting with [06-idiomatic-rust/01-api-design-and-documentation.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/01-api-design-and-documentation.md).
+Proceed to **Module 6: Idiomatic Rust & Advanced API Design** starting with [06-idiomatic-rust/01-api-design-and-documentation.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/06-idiomatic-rust/01-api-design-and-documentation.md).

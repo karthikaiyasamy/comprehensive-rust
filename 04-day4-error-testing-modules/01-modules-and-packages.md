@@ -228,4 +228,4 @@ fn main() {
 
 ## Summary & Next Step
 
-You have mastered package layout, module trees, privacy boundaries, and re-exporting. Next, we build quality software using **Testing: Unit Tests, Integration Tests, and Clippy** in [02-testing.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/04-day4-error-testing-modules/02-testing.md).
+You have mastered package layout, module trees, privacy boundaries, and re-exporting. Next, we build quality software using **Testing: Unit Tests, Integration Tests, and Clippy** in [02-testing.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/04-day4-error-testing-modules/02-testing.md).

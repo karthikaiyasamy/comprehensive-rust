@@ -195,4 +195,4 @@ By having `.build(self)` consume `self`, the builder is invalidated. The caller 
 
 ## Summary & Next Step
 
-You have mastered move semantics, `Copy` vs `Clone`, drop order, and ownership-based builders. Next, we explore heap allocations and shared ownership in **Smart Pointers: Box, Rc, and RefCell** in [03-smart-pointers.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/03-smart-pointers.md).
+You have mastered move semantics, `Copy` vs `Clone`, drop order, and ownership-based builders. Next, we explore heap allocations and shared ownership in **Smart Pointers: Box, Rc, and RefCell** in [03-smart-pointers.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/03-day3-memory-and-lifetimes/03-smart-pointers.md).

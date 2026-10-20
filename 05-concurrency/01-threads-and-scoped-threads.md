@@ -86,4 +86,4 @@ fn main() {
 
 ## Summary & Next Step
 
-You have learned how to spawn OS threads, handle return values, and use scoped threads to borrow stack references concurrently. Next, we explore message passing in **Channels and Message-Passing Concurrency** in [02-channels-and-message-passing.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/02-channels-and-message-passing.md).
+You have learned how to spawn OS threads, handle return values, and use scoped threads to borrow stack references concurrently. Next, we explore message passing in **Channels and Message-Passing Concurrency** in [02-channels-and-message-passing.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/05-concurrency/02-channels-and-message-passing.md).

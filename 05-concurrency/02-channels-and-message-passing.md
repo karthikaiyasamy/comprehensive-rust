@@ -104,4 +104,4 @@ Rust channels provide exceptional ownership safety when disconnects occur:
 
 ## Summary & Next Step
 
-You have learned unbounded and bounded MPSC channels, backpressure, and graceful disconnection semantics. Next, we explore the type-level foundations of thread safety in **The Send and Sync Marker Traits** in [03-send-and-sync.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/03-send-and-sync.md).
+You have learned unbounded and bounded MPSC channels, backpressure, and graceful disconnection semantics. Next, we explore the type-level foundations of thread safety in **The Send and Sync Marker Traits** in [03-send-and-sync.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/05-concurrency/03-send-and-sync.md).

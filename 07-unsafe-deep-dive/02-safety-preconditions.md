@@ -86,4 +86,4 @@ impl<T> MySlice<T> {
 
 ## Summary & Next Step
 
-You have learned what Undefined Behavior is, the definition of Soundness, and how to write safety preconditions. Next, we master safe memory allocation and initialization in **Memory Lifecycle and MaybeUninit** in [03-memory-lifecycle-and-uninit.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/07-unsafe-deep-dive/03-memory-lifecycle-and-uninit.md).
+You have learned what Undefined Behavior is, the definition of Soundness, and how to write safety preconditions. Next, we master safe memory allocation and initialization in **Memory Lifecycle and MaybeUninit** in [03-memory-lifecycle-and-uninit.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/07-unsafe-deep-dive/03-memory-lifecycle-and-uninit.md).

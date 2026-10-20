@@ -108,4 +108,4 @@ async fn main() {
 
 ## Summary & Next Step
 
-You have learned Tokio channel architectures, concurrent execution with `join!`, and multiplexing with `select!`. Next, we explore critical traps and edge cases in **Async Pitfalls, Pinning, and Cancellation Safety** in [07-async-pitfalls-and-cancellation.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/07-async-pitfalls-and-cancellation.md).
+You have learned Tokio channel architectures, concurrent execution with `join!`, and multiplexing with `select!`. Next, we explore critical traps and edge cases in **Async Pitfalls, Pinning, and Cancellation Safety** in [07-async-pitfalls-and-cancellation.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/05-concurrency/07-async-pitfalls-and-cancellation.md).

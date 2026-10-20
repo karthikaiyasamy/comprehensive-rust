@@ -191,4 +191,4 @@ fn main() {
 
 ## Summary & Next Step
 
-You have mastered `Box`, `Rc`, `RefCell`, and recursive data structures. Next, we explore the core of Rust's borrow checker: **Borrowing, Non-Lexical Lifetimes, and Reborrowing** in [04-borrowing-and-references.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/04-borrowing-and-references.md).
+You have mastered `Box`, `Rc`, `RefCell`, and recursive data structures. Next, we explore the core of Rust's borrow checker: **Borrowing, Non-Lexical Lifetimes, and Reborrowing** in [04-borrowing-and-references.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/03-day3-memory-and-lifetimes/04-borrowing-and-references.md).

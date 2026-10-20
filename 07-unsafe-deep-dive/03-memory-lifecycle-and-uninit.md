@@ -72,4 +72,4 @@ Never assign to uninitialized memory using `*ptr = val`!
 
 ## Summary & Next Step
 
-You have learned the memory lifecycle, why raw uninitialized memory causes UB, and how to use `MaybeUninit<T>` safely. Next, we master one of Rust's most intellectually challenging primitives in **Pinning in Depth: Self-Referential Types and Drop** in [04-pinning-in-depth.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/07-unsafe-deep-dive/04-pinning-in-depth.md).
+You have learned the memory lifecycle, why raw uninitialized memory causes UB, and how to use `MaybeUninit<T>` safely. Next, we master one of Rust's most intellectually challenging primitives in **Pinning in Depth: Self-Referential Types and Drop** in [04-pinning-in-depth.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/07-unsafe-deep-dive/04-pinning-in-depth.md).

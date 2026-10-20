@@ -223,4 +223,4 @@ fn main() {
 
 ## Summary & Next Step
 
-You have mastered the standard library's core data structures: `Option`, `Result`, `Vec`, `HashMap`, and lazy iterators. Next, we examine fundamental system traits: **Standard Library Traits: Comparisons, Conversions, and I/O** in [06-standard-library-traits.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/06-standard-library-traits.md).
+You have mastered the standard library's core data structures: `Option`, `Result`, `Vec`, `HashMap`, and lazy iterators. Next, we examine fundamental system traits: **Standard Library Traits: Comparisons, Conversions, and I/O** in [06-standard-library-traits.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/02-day2-types-and-traits/06-standard-library-traits.md).

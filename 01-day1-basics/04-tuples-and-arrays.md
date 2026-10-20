@@ -194,4 +194,4 @@ In Rust, compound types implement `Copy` if and only if **all of their component
 
 ## Summary & Next Step
 
-You now understand stack-allocated arrays, heterogeneous tuples, and pattern destructuring. Next, we explore one of Rust's most critical concepts: **References and Slices** in [05-references-and-slices.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/01-day1-basics/05-references-and-slices.md).
+You now understand stack-allocated arrays, heterogeneous tuples, and pattern destructuring. Next, we explore one of Rust's most critical concepts: **References and Slices** in [05-references-and-slices.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/01-day1-basics/05-references-and-slices.md).

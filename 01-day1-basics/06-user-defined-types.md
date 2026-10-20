@@ -290,4 +290,4 @@ fn main() {
 
 You have completed **Day 1: Rust Fundamentals**! You know how to build programs with types, control structures, references, slices, structs, and enums. 
 
-Proceed to **Day 2: Types, Traits, and Generics** starting with [02-day2-types-and-traits/01-pattern-matching.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/01-pattern-matching.md).
+Proceed to **Day 2: Types, Traits, and Generics** starting with [02-day2-types-and-traits/01-pattern-matching.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/02-day2-types-and-traits/01-pattern-matching.md).

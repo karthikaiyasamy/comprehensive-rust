@@ -203,4 +203,4 @@ fn main() {
 
 ## Summary & Next Step
 
-You have learned methods, receivers (`&self`, `&mut self`, `self`), traits, supertraits, the orphan rule, and derive macros. Next, we delve into type parameterization: **Generics, Trait Bounds, and Dynamic Dispatch** in [03-generics.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/03-generics.md).
+You have learned methods, receivers (`&self`, `&mut self`, `self`), traits, supertraits, the orphan rule, and derive macros. Next, we delve into type parameterization: **Generics, Trait Bounds, and Dynamic Dispatch** in [03-generics.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/02-day2-types-and-traits/03-generics.md).

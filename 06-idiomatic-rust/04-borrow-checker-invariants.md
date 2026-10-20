@@ -99,4 +99,4 @@ struct CustomIter<'a, T> {
 
 ## Summary & Next Step
 
-You have learned split borrows, slice splitting, and zero-sized `PhantomData` markers. Next, we explore security and authorization patterns in **Token Types and Capability-Based Security** in [05-token-types-and-capabilities.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/05-token-types-and-capabilities.md).
+You have learned split borrows, slice splitting, and zero-sized `PhantomData` markers. Next, we explore security and authorization patterns in **Token Types and Capability-Based Security** in [05-token-types-and-capabilities.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/06-idiomatic-rust/05-token-types-and-capabilities.md).

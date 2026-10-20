@@ -295,4 +295,4 @@ fn main() {
 
 ## Summary & Next Step
 
-You now understand Rust's expression-based control flow, loops, shadowing, functions, and common macros. Next, we explore compound types: **Tuples, Arrays, and Destructuring** in [04-tuples-and-arrays.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/01-day1-basics/04-tuples-and-arrays.md).
+You now understand Rust's expression-based control flow, loops, shadowing, functions, and common macros. Next, we explore compound types: **Tuples, Arrays, and Destructuring** in [04-tuples-and-arrays.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/01-day1-basics/04-tuples-and-arrays.md).

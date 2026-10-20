@@ -109,4 +109,4 @@ fn connect(host: Hostname, port: Port, timeout: Timeout) { ... }
 
 ## Summary & Next Step
 
-You have learned how to write comprehensive doc comments with doctests and apply the Rust API naming guidelines. Next, we use the compiler to prevent logic errors in **Leveraging the Type System: Newtypes, RAII, and Extension Traits** in [02-leveraging-the-type-system.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/02-leveraging-the-type-system.md).
+You have learned how to write comprehensive doc comments with doctests and apply the Rust API naming guidelines. Next, we use the compiler to prevent logic errors in **Leveraging the Type System: Newtypes, RAII, and Extension Traits** in [02-leveraging-the-type-system.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/06-idiomatic-rust/02-leveraging-the-type-system.md).

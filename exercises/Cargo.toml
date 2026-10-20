@@ -12,6 +12,8 @@ members = [
     "day2_log_filter",
     "day2_counter",
     "day2_rot13",
+    "day2_typestate_order",
+    "day2_variance_and_generics",
     "day3_builder_type",
     "day3_binary_tree",
     "day3_protobuf_parsing",

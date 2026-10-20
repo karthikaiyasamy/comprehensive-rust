@@ -214,4 +214,4 @@ Let's dissect each component:
 
 ## Summary & Next Step
 
-You now understand Rust's design rationale, safety philosophy, and the Cargo toolchain. Next, we will explore **Variables, Scalar Types, Arithmetic, and Type Inference** in [02-types-and-values.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/01-day1-basics/02-types-and-values.md).
+You now understand Rust's design rationale, safety philosophy, and the Cargo toolchain. Next, we will explore **Variables, Scalar Types, Arithmetic, and Type Inference** in [02-types-and-values.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/01-day1-basics/02-types-and-values.md).

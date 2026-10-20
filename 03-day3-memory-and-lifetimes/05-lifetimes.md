@@ -160,4 +160,4 @@ Notice that no `String::clone()` or heap allocations occurred. `Field<'a>` borro
 
 ## Summary & Next Step
 
-You have learned generic lifetime annotations, the three elision rules, struct lifetime bounds, and zero-copy decoding. Next, we look at advanced lifetimes: **Slices, Subtyping, and Lifetime Bounds** in [06-slices-and-lifetimes.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/06-slices-and-lifetimes.md).
+You have learned generic lifetime annotations, the three elision rules, struct lifetime bounds, and zero-copy decoding. Next, we look at advanced lifetimes: **Slices, Subtyping, and Lifetime Bounds** in [06-slices-and-lifetimes.md](file:///Users/karthik/dev/rust-projects/comprehensive-rust/comprehensive-rust/03-day3-memory-and-lifetimes/06-slices-and-lifetimes.md).
