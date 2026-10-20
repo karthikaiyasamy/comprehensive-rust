@@ -1,6 +1,6 @@
 # Comprehensive Rust 🦀
 
-Welcome to **Comprehensive Rust**, an extensive, deeply structured reference and interactive curriculum based on Google's renowned Rust training program. 
+Welcome to **Comprehensive Rust**, an extensive, deeply structured reference and interactive curriculum based on Google's renowned Rust training program, now enhanced with **comprehensive Java-to-Rust comparisons**, **visual memory diagrams**, **deep type system coverage**, and **debugging guides** specifically for Java developers.
 
 This repository contains searchable, comprehensive Markdown chapters covering **foundational theory**, **under-the-hood memory diagrams**, **common compiler traps**, and a **companion Cargo workspace of 21 runnable exercise packages**.
 
@@ -40,77 +40,104 @@ This repository contains searchable, comprehensive Markdown chapters covering **
    - Type aliases, `const` vs. `static`.
    - *Exercise: Elevator Events Modeling*
 
+### [Bonus: Java Developer Guides]
+7. [07. Java to Rust Comparison Guide](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/01-day1-basics/07-java-to-rust-comparison.md)
+   - Side-by-side comparisons for Java developers
+   - Mental model mapping between Java and Rust
+   - Common patterns and anti-patterns
+   - Debugging tips specific to Java developers
+
 ---
 
 ### [02. Day 2: Types, Traits, and the Standard Library](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits)
-7. [01. Advanced Pattern Matching & Control Flow](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/01-pattern-matching.md)
+8. [01. Advanced Pattern Matching & Control Flow](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/01-pattern-matching.md)
    - Refutable vs. irrefutable patterns, matching literals, ranges, struct/enum destructuring.
    - Match guards, variable binding with `@`.
    - Let control flow: `if let`, `while let`, and `let else` guard clauses.
    - *Exercise: Arithmetic Expression Evaluation*
-8. [02. Methods, Traits, and Deriving](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/02-methods-and-traits.md)
+9. [02. Methods, Traits, and Deriving](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/02-methods-and-traits.md)
    - `impl` blocks, receiver types (`&self`, `&mut self`, `self`), associated functions.
    - Defining and implementing traits, default methods, supertraits, associated types.
    - Trait coherence and the Orphan Rule.
    - Automatic trait derivation with `#[derive(...)]`.
    - *Exercise: Modular Logger Trait & Decorator*
-9. [03. Generics, Trait Bounds, and Dispatch](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/03-generics.md)
-   - Generic functions, structs, and enums.
-   - Compile-time monomorphization and zero runtime cost.
-   - Trait bounds and `where` clauses.
-   - Static dispatch (`impl Trait`) vs. Dynamic dispatch (`dyn Trait` trait objects and vtables).
-   - Object safety requirements.
-   - *Exercise: Generic min Function*
-10. [04. Closures and Environment Capturing](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/04-closures.md)
+10. [03. Generics, Trait Bounds, and Dispatch](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/03-generics.md)
+    - Generic functions, structs, and enums.
+    - Compile-time monomorphization and zero runtime cost.
+    - Trait bounds and `where` clauses.
+    - Static dispatch (`impl Trait`) vs. Dynamic dispatch (`dyn Trait` trait objects and vtables).
+    - Object safety requirements.
+    - *Exercise: Generic min Function*
+11. [04. Closures and Environment Capturing](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/04-closures.md)
     - Closure syntax and type inference.
     - Capturing modes: `Fn` (borrow), `FnMut` (mutable borrow), `FnOnce` (move/consume).
     - The `move` keyword for thread and lifecycle management.
     - *Exercise: Log Filter with Closures*
-11. [05. Standard Library Types: Option, Result, Vec, String, and HashMap](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/05-standard-library-types.md)
+12. [05. Standard Library Types: Option, Result, Vec, String, and HashMap](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/05-standard-library-types.md)
     - `Option<T>` combinators (`unwrap_or`, `map`, `and_then`).
     - `Result<T, E>` and the `?` try operator.
     - Dynamic array heap memory layout for `Vec<T>`.
     - Key-value mapping with `HashMap<K, V>` and the `.entry()` API.
     - Lazy composable iterators (`.iter()`, `.iter_mut()`, `.into_iter()`, `.map()`, `.filter()`).
     - *Exercise: Frequency Counter with Entry API*
-12. [06. Standard Library Traits: Comparisons, Conversions, and I/O](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/06-standard-library-traits.md)
+13. [06. Standard Library Traits: Comparisons, Conversions, and I/O](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/06-standard-library-traits.md)
     - Comparison traits: `PartialEq`, `Eq`, `PartialOrd`, `Ord` (NaN nuances).
     - Operator overloading with `std::ops`.
     - Conversions: `From` & `Into`, `TryFrom` & `TryInto` (why `TryFrom` is safer than `as`).
     - Standard I/O streaming traits: `std::io::Read` and `std::io::Write`.
     - *Exercise: ROT13 Streaming Decoder*
 
+### [Bonus: Enhanced Type System Coverage for Java Developers]
+14. [07. Deep Dive: Type System Mastery for Java Developers](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/07-deep-dive-types-java-developers.md)
+    - Algebra of Types: Product vs Sum types
+    - Newtype pattern: Zero-cost type safety
+    - Phantom types: Type-level programming
+    - Type state pattern: Compile-time state machines
+    - Zero-sized types: Compile-time guarantees
+    - **Why this knowledge transfers beyond Rust**
+
 ---
 
 ### [03. Day 3: Memory Management, Ownership, and Lifetimes](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes)
-13. [01. Memory Architecture & Approaches to Management](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/01-memory-management.md)
+15. [01. Memory Architecture & Approaches to Management](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/01-memory-management.md)
     - Stack vs. Heap layout, pointer arithmetic, allocation speeds.
     - Comparison: Manual Free (C/C++) vs. Tracing GC (Go/Java) vs. Static Ownership (Rust).
     - The Three Rules of Ownership.
-14. [02. Ownership, Move Semantics, and Drop](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/02-ownership-and-moves.md)
+16. [02. Ownership, Move Semantics, and Drop](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/02-ownership-and-moves.md)
     - Move semantics: shallow metadata copy + source invalidation. Double-free prevention.
     - `Copy` (implicit stack bitwise copy) vs. `Clone` (explicit deep heap copy).
     - The `Drop` trait, destruction order (reverse declaration for locals, declaration order for fields), `std::mem::drop`.
     - *Exercise: Type-Safe Builder Pattern*
-15. [03. Smart Pointers: Box, Rc, and Interior Mutability](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/03-smart-pointers.md)
+17. [03. Smart Pointers: Box, Rc, and Interior Mutability](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/03-smart-pointers.md)
     - `Box<T>`: heap allocation and recursive data structures.
     - `Rc<T>`: reference-counted shared ownership for single-threaded graphs.
     - `RefCell<T>`: interior mutability and runtime borrow checking.
     - The `Rc<RefCell<T>>` shared-mutable architecture.
     - *Exercise: Generic Binary Search Tree*
-16. [04. The Borrow Checker: Aliasing, NLL, and Invariants](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/04-borrowing-and-references.md)
+18. [04. The Borrow Checker: Aliasing, NLL, and Invariants](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/04-borrowing-and-references.md)
     - Freezing and invalidation: why iterator invalidation is mathematically impossible in Rust.
     - Non-Lexical Lifetimes (NLL): borrows end at last use.
     - Reborrowing mechanics (`&mut *ref`).
     - Diagnostic guide to solving borrow checker errors.
     - *Exercise: The Wizard's Inventory*
-17. [05. Lifetimes: Annotations, Structs, and Elision Rules](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/05-lifetimes.md)
+
+### [Bonus: Visual Ownership Guide for Java Developers]
+19. [07. Visual Ownership & Borrowing Guide for Java Developers](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/07-java-developers-visual-guide.md)
+    - Memory models: Java vs Rust comparison
+    - Ownership moves: Step-by-step visual diagrams
+    - Borrowing: References in action
+    - Borrow checker scenarios: Visual analysis
+    - Lifetimes visualized
+    - Common Java-to-Rust ownership misconceptions
+    - Memory diagram practice exercises
+
+20. [05. Lifetimes: Annotations, Structs, and Elision Rules](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/05-lifetimes.md)
     - Why lifetime parameters exist: annotating relationships between inputs and outputs.
     - The Three Lifetime Elision Rules.
     - Structs holding references.
     - The `'static` lifetime (string literals vs. owned type bounds).
     - *Exercise: Zero-Copy Protocol Decoding (Protobuf Parsing)*
-18. [06. Advanced Slices, Subtyping, and Lifetime Bounds](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/06-slices-and-lifetimes.md)
+21. [06. Advanced Slices, Subtyping, and Lifetime Bounds](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/06-slices-and-lifetimes.md)
     - Decoupling struct fields with multiple lifetime parameters (`'a`, `'b`).
     - Lifetime subtyping: `'a: 'b` ("`'a` outlives `'b`").
     - Type lifetime bounds `T: 'a`.
@@ -119,62 +146,81 @@ This repository contains searchable, comprehensive Markdown chapters covering **
 ---
 
 ### [04. Day 4: Errors, Testing, and Modules](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/04-day4-error-testing-modules)
-19. [01. Packages, Crates, and Modules](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/04-day4-error-testing-modules/01-modules-and-packages.md)
+22. [01. Packages, Crates, and Modules](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/04-day4-error-testing-modules/01-modules-and-packages.md)
     - Package layout, crates (library vs. binary), module tree hierarchy.
     - Privacy boundaries: `pub`, `pub(crate)`, `pub(super)`, `pub(in path)`.
     - Path resolution: `use`, `super`, `self`, and re-exporting with `pub use`.
     - *Exercise: Modules for a GUI Library*
-20. [02. Testing: Unit Tests, Integration Tests, and Clippy](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/04-day4-error-testing-modules/02-testing.md)
+23. [02. Testing: Unit Tests, Integration Tests, and Clippy](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/04-day4-error-testing-modules/02-testing.md)
     - Unit tests (`#[cfg(test)]`, `#[test]`, `#[should_panic]`).
     - Integration tests in `tests/` directory.
     - Executable documentation tests (doctests).
     - Compiler lints and Clippy static analysis.
     - *Exercise: Validating Numbers with the Luhn Algorithm*
-21. [03. Error Handling: Panics, Result, thiserror, and anyhow](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/04-day4-error-testing-modules/03-error-handling.md)
+24. [03. Error Handling: Panics, Result, thiserror, and anyhow](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/04-day4-error-testing-modules/03-error-handling.md)
     - Panics: unrecoverable bugs, stack unwinding vs. abort (`panic = "abort"`).
     - Recoverable errors with `Result<T, E>` and `?`.
     - Reusable library error enums with `thiserror`.
     - Ergonomic application error reporting with `anyhow` and `.context()`.
     - *Exercise: Rewriting Panics to Result*
-22. [04. Unsafe Rust Basics & Safe FFI Wrappers](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/04-day4-error-testing-modules/04-unsafe-rust-basics.md)
-    - What unsafe does and does not do.
-    - The 5 Unsafe Superpowers (raw pointers, calling unsafe functions, implementing unsafe traits, mutating statics, union access).
-    - Dereferencing raw pointers (`*const T`, `*mut T`).
-    - Safe FFI wrapper around C standard library functions.
+
+### [Bonus: Error Handling Guide for Java Developers]
+25. [05. Error Handling: Java vs Rust - Complete Guide](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/04-day4-error-testing-modules/05-java-developers-error-handling-guide.md)
+    - Philosophy: Exceptions vs Result Types
+    - Compile-time guarantees: exhaustiveness
+    - The `?` Operator: Composable Error Propagation
+    - Custom Error Types: thiserror
+    - anyhow: Ergonomic Application Errors
+    - Real-World Example: API Client
+    - Best practices for Java developers
+    - Migration guide: Converting Java code
 
 ---
 
 ### [05. Concurrency in Depth](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency)
-23. [01. Threads & Scoped Threads](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/01-threads-and-scoped-threads.md)
+26. [01. Threads & Scoped Threads](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/01-threads-and-scoped-threads.md)
     - Native OS threads with `thread::spawn` and `JoinHandle`.
     - Scoped threads with `thread::scope`: safely borrowing local stack frames concurrently without `Arc`.
-24. [02. Message Passing & MPSC Channels](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/02-channels-and-message-passing.md)
+27. [02. Message Passing & MPSC Channels](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/02-channels-and-message-passing.md)
     - `std::sync::mpsc`: Multiple Producer, Single Consumer.
     - Unbounded channels vs. bounded channels (`sync_channel`) with backpressure.
     - Rendezvous synchronization (`sync_channel(0)`).
     - Channel disconnection and ownership recovery semantics.
-25. [03. The Thread-Safety Contract: Send and Sync](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/03-send-and-sync.md)
+28. [03. The Thread-Safety Contract: Send and Sync](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/03-send-and-sync.md)
     - Formal definitions: `Send` (ownership transfer) and `Sync` (shared reference transfer).
     - The Fundamental Equivalence: $T \text{ is } Sync \iff \&T \text{ is } Send$.
     - Why `Rc` and `RefCell` are forbidden across threads.
     - Upgrading to `Arc` and `Mutex`.
-26. [04. Shared State Concurrency: Arc, Mutex, and RwLock](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/04-shared-state-concurrency.md)
+29. [04. Shared State Concurrency: Arc, Mutex, and RwLock](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/04-shared-state-concurrency.md)
     - The `Arc<Mutex<T>>` synchronization pattern.
     - RAII `MutexGuard` automatic unlocking.
     - Lock poisoning and recovery.
     - Reader-writer locks (`RwLock<T>`).
     - *Exercise: The Dining Philosophers Problem (Deadlock Prevention)*
-27. [05. Asynchronous Programming: Futures, Poll, and Runtimes](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/05-async-basics.md)
+30. [05. Asynchronous Programming: Futures, Poll, and Runtimes](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/05-async-basics.md)
     - Cooperative multitasking vs. OS threads.
     - Why Futures are lazy.
     - The `Future` trait, `poll()`, `Poll::Pending` vs. `Poll::Ready`, and `Waker`.
     - Async state machine enum transformation.
     - The Tokio runtime and executor.
-28. [06. Async Control Flow: Channels, Join, and Select](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/06-async-channels-and-control-flow.md)
+
+### [Bonus: Concurrency & Async Guide for Java Developers]
+31. [08. Concurrency & Async: Java to Rust Transition Guide](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/08-java-developers-concurrency-guide.md)
+    - Threads: std::thread vs Java Thread Pool
+    - Shared State: Mutex & Arc
+    - The Send and Sync Traits: Thread Safety as Types
+    - Channels: MPSC vs Java BlockingQueue
+    - Async/Await: Tokio vs CompletableFuture
+    - Real-World Example: Concurrent Web Crawler
+    - Common Pitfalls for Java Developers
+    - Debugging Concurrency Issues
+    - Best practices for Java developers
+
+32. [06. Async Control Flow: Channels, Join, and Select](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/06-async-channels-and-control-flow.md)
     - Tokio channel architectures: `mpsc`, `oneshot`, `broadcast`, and `watch`.
     - Concurrent execution with `tokio::join!`.
     - Multiplexing and racing with `tokio::select!`.
-29. [07. Async Pitfalls, Pinning, and Cancellation Safety](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/07-async-pitfalls-and-cancellation.md)
+33. [07. Async Pitfalls, Pinning, and Cancellation Safety](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/07-async-pitfalls-and-cancellation.md)
     - Pitfall 1: Blocking the executor thread pool (and solving with `spawn_blocking`).
     - Pitfall 2: Pinning and self-referential future structures.
     - Pitfall 3: Cancellation safety (handling dropped futures in `select!`).
@@ -183,27 +229,27 @@ This repository contains searchable, comprehensive Markdown chapters covering **
 ---
 
 ### [06. Idiomatic Rust & Advanced API Design](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust)
-30. [01. Foundations of API Design & Documentation](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/01-api-design-and-documentation.md)
+34. [01. Foundations of API Design & Documentation](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/01-api-design-and-documentation.md)
     - Markdown doc comments (`///`, `//!`) with standard `# Examples`, `# Panics`, `# Safety` sections.
     - Rust API Guidelines: `as_` (borrowed), `to_` (borrowed to owned), `into_` (owned).
     - Field getters: omitting the `get_` prefix.
     - Strong domain types vs. primitive obsession.
-31. [02. Leveraging the Type System: Newtypes, RAII, and Extension Traits](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/02-leveraging-the-type-system.md)
+35. [02. Leveraging the Type System: Newtypes, RAII, and Extension Traits](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/02-leveraging-the-type-system.md)
     - The Newtype pattern for zero-cost type safety and bypassing the Orphan Rule.
     - RAII Scope Guards and transactional rollback.
     - Extension traits for adding methods to standard types.
-32. [03. The Typestate Pattern: Compile-Time State Machines](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/03-typestate-pattern.md)
+36. [03. The Typestate Pattern: Compile-Time State Machines](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/03-typestate-pattern.md)
     - Eliminating runtime assertion checks using Zero-Sized Types (ZSTs).
     - Compile-time prevention of invalid method invocations.
     - Invalidating previous states through value moves (`self`).
-33. [04. Borrow Checker Invariants: Split Borrows & PhantomData](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/04-borrow-checker-invariants.md)
+37. [04. Borrow Checker Invariants: Split Borrows & PhantomData](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/04-borrow-checker-invariants.md)
     - Struct field-level split borrows vs. method receiver whole-struct borrows.
     - Slicing splitting with `split_at_mut`.
     - `PhantomData<T>`: communicating ownership, lifetimes, and variance to the compiler.
-34. [05. Token Types & Capability-Based Security](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/05-token-types-and-capabilities.md)
+38. [05. Token Types & Capability-Based Security](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/05-token-types-and-capabilities.md)
     - Unforgeable zero-sized capability tokens.
     - Enforcing hardware initialization order and authorization at compile time with zero runtime cost.
-35. [06. Polymorphism: Composition Over Inheritance](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/06-polymorphism-composition.md)
+39. [06. Polymorphism: Composition Over Inheritance](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/06-idiomatic-rust/06-polymorphism-composition.md)
     - Avoiding fragile base classes and deep OOP inheritance trees.
     - Struct composition and trait contracts.
     - Strategy pattern and trade-off comparison between Static and Dynamic dispatch.
@@ -211,26 +257,26 @@ This repository contains searchable, comprehensive Markdown chapters covering **
 ---
 
 ### [07. The Unsafe Rust Deep Dive](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/07-unsafe-deep-dive)
-36. [01. Understanding Unsafe: Contracts, Roles, and Invariants](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/07-unsafe-deep-dive/01-understanding-unsafe.md)
+40. [01. Understanding Unsafe: Contracts, Roles, and Invariants](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/07-unsafe-deep-dive/01-understanding-unsafe.md)
     - Why unsafe exists: the conservative nature of static analysis.
     - The dual roles of `unsafe`: author's risk declaration vs. caller's proof of compliance.
     - Safety invariants vs. Validity invariants (instant UB).
-37. [02. Safety Preconditions, Soundness, and Undefined Behavior](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/07-unsafe-deep-dive/02-safety-preconditions.md)
+41. [02. Safety Preconditions, Soundness, and Undefined Behavior](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/07-unsafe-deep-dive/02-safety-preconditions.md)
     - The definition of Soundness: safe code can never trigger UB.
     - The 3 Shapes of Sound Rust.
     - Universal preconditions: alignment, dereferenceability, initialized memory, aliasing.
     - Constructing rigorous Soundness Proofs.
-38. [03. Memory Lifecycle & MaybeUninit](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/07-unsafe-deep-dive/03-memory-lifecycle-and-uninit.md)
+42. [03. Memory Lifecycle & MaybeUninit](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/07-unsafe-deep-dive/03-memory-lifecycle-and-uninit.md)
     - Memory phases: Allocation -> Initialization -> Usage -> Destruction -> Deallocation.
     - Why reading uninitialized bytes is immediate UB.
     - Sound uninitialized memory manipulation with `std::mem::MaybeUninit<T>`.
     - Partial array initialization and writing without dropping.
-39. [04. Pinning in Depth: Self-Referential Types & Drop](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/07-unsafe-deep-dive/04-pinning-in-depth.md)
+43. [04. Pinning in Depth: Self-Referential Types & Drop](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/07-unsafe-deep-dive/04-pinning-in-depth.md)
     - What is a move? Why moves invalidate internal self-referential pointers.
     - The `Pin<P>` mathematical contract.
     - The `Unpin` auto trait and opting out with `PhantomPinned`.
     - Step-by-step construction of a sound self-referential buffer.
-40. [05. Foreign Function Interface (FFI) & C Interoperability](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/07-unsafe-deep-dive/05-ffi-and-language-interop.md)
+44. [05. Foreign Function Interface (FFI) & C Interoperability](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/07-unsafe-deep-dive/05-ffi-and-language-interop.md)
     - ABI compatibility with `extern "C"`.
     - Struct memory layouts with `#[repr(C)]`.
     - String interoperability: `CStr` and `CString`.
@@ -300,6 +346,59 @@ cargo test --manifest-path exercises/Cargo.toml -p concurrency_async_chat
 ## 🎯 Recommended Study Roadmap
 
 1. **Week 1: Fundamentals (Days 1 & 2):** Read Chapters 1 through 12. Run and experiment with exercises `day1_*` and `day2_*`. Build comfort with the compiler and type checker.
+   - **Java Developers:** Start with [07-java-to-rust-comparison.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/01-day1-basics/07-java-to-rust-comparison.md) and [08-debugging-java-developers.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/01-day1-basics/08-debugging-java-developers.md)
+
 2. **Week 2: Memory & Ownership (Days 3 & 4):** Read Chapters 13 through 22. Focus heavily on stack/heap diagrams, move semantics, and lifetimes. Work through exercises `day3_*` and `day4_*`.
+   - **Java Developers:** Read [07-java-developers-visual-guide.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/03-day3-memory-and-lifetimes/07-java-developers-visual-guide.md) for visual ownership understanding
+   - **Type System Focus:** Read [07-deep-dive-types-java-developers.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/02-day2-types-and-traits/07-deep-dive-types-java-developers.md) for type mastery
+
 3. **Week 3: Concurrency & Async:** Read Chapters 23 through 29. Run the multi-threaded and async exercises to master thread safety (`Send`/`Sync`) and Tokio event loops.
+   - **Java Developers:** Read [08-java-developers-concurrency-guide.md](file:///Users/karthik/dev/rust_workspace/comprehensive-rust/05-concurrency/08-java-developers-concurrency-guide.md) for thread safety transition
+
 4. **Week 4: Idiomatic Systems Design & Unsafe Deep Dive:** Read Chapters 30 through 40. Study how top Rust engineers design zero-cost typestates, sound unsafe wrappers, and FFI bindings.
+
+---
+
+## 🎓 Special Features for Java Developers
+
+### Visual Learning
+- **Memory diagrams** showing Java vs Rust memory models
+- **Borrowing visualizations** with step-by-step ownership tracking
+- **Lifetime annotations** with practical examples
+
+### Type System Mastery
+- **Algebra of Types** (Product vs Sum)
+- **Newtype pattern** for zero-cost type safety
+- **Phantom types** for compile-time state machines
+- **Zero-sized types** for capability-based security
+
+### Error Handling
+- **Result vs Exceptions** comparison
+- **thiserror** for library errors
+- **anyhow** for application errors
+- **Migration guide** from Java exception handling
+
+### Concurrency
+- **Send & Sync** traits as type system guarantees
+- **Arc<Mutex<T>>** vs Java synchronized blocks
+- **Channels** vs Java BlockingQueue
+- **Tokio** vs CompletableFuture
+
+### Debugging
+- **Common error messages** with Java comparisons
+- **Borrow checker debugging** workflows
+- **Debugging tools** specific to Rust
+
+---
+
+## 📚 Why This Curriculum Is Unique
+
+This curriculum combines Google's battle-tested internal training with **comprehensive enhancements for Java developers**:
+
+1. **Visual Learning:** Memory diagrams and ownership visualizations help bridge the mental model gap
+2. **Type System Depth:** Deep dives into algebraic types, phantom types, and zero-cost abstractions
+3. **Error Handling:** Comprehensive comparison of Result vs Exceptions with migration guides
+4. **Concurrency:** Thread safety explained through Java developer lens
+5. **Debugging Guides:** Common issues and solutions specific to Java developers
+
+The result is a **complete, self-contained learning path** that teaches Rust while leveraging your existing Java knowledge.
